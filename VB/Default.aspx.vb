@@ -1,5 +1,4 @@
-﻿Imports DevExpress.Web.ASPxEditors
-Imports DevExpress.Web.ASPxGridView
+﻿Imports DevExpress.Web
 Imports System
 Imports System.Collections.Generic
 
@@ -10,7 +9,7 @@ Partial Public Class _Default
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
 
     End Sub
-    Protected Sub ASPxCallbackPanel1_Callback(ByVal source As Object, ByVal e As DevExpress.Web.ASPxClasses.CallbackEventArgsBase)
+    Protected Sub ASPxCallbackPanel1_Callback(ByVal source As Object, ByVal e As DevExpress.Web.CallbackEventArgsBase)
     End Sub
     Protected Sub ASPxGridView1_HtmlRowCreated(ByVal sender As Object, ByVal e As ASPxGridViewTableRowEventArgs)
         Dim gridView As ASPxGridView = (DirectCast(sender, ASPxGridView))

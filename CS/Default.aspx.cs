@@ -1,5 +1,4 @@
-using DevExpress.Web.ASPxEditors;
-using DevExpress.Web.ASPxGridView;
+using DevExpress.Web;
 using System;
 using System.Collections.Generic;
 
@@ -9,7 +8,7 @@ public partial class _Default : System.Web.UI.Page {
     protected void Page_Load(object sender, EventArgs e) {
         
     }
-    protected void ASPxCallbackPanel1_Callback(object source, DevExpress.Web.ASPxClasses.CallbackEventArgsBase e) {
+    protected void ASPxCallbackPanel1_Callback(object source, DevExpress.Web.CallbackEventArgsBase e) {
     }
     protected void ASPxGridView1_HtmlRowCreated(object sender, ASPxGridViewTableRowEventArgs e) {
         ASPxGridView gridView =  ((ASPxGridView)sender);
