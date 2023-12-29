@@ -1,8 +1,3 @@
-<!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/128531347/13.1.12%2B)
-[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E450)
-[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
-<!-- default badges end -->
 <!-- default file list -->
 *Files to look at*:
 
@@ -10,9 +5,6 @@
 * [Default.aspx.cs](./CS/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/Default.aspx.vb))
 <!-- default file list end -->
 # How to conditionally disable the UpdateButton in client code
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e450/)**
-<!-- run online end -->
 
 
 <p>This functionality can be achieved using templates. To be able to mimic the command columns behavior, I used ASPxHyperlinks in the column's DataItemTemplate and EditItemTemplate Containers. The HtmlRoewCreated event is used to set the Edit button's NavigateUrl property so that it can start editing a proper row. Also, in this event handler I set the ClientInstanceName property of the Updatebutton. This is done to be able to access the UpdateButton in client code and disable/enable it. This code is implemented in the CellEditorInitialize event handler.<br><br><strong>See also</strong><br><a href="https://www.devexpress.com/Support/Center/p/E2345">How to enable/disable command buttons on the client side</a><br><a href="https://www.devexpress.com/Support/Center/p/E1246">How to create a custom command button with the appearance and action depending on a row state</a><br><a href="https://www.devexpress.com/Support/Center/p/E366">How to customize command buttons in individual rows</a><br><a href="https://www.devexpress.com/Support/Center/p/E351">How to show/hide ASPxGridView custom command buttons using HTML elements </a></p>
